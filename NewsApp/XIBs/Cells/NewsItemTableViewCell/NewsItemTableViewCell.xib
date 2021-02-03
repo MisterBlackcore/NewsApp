@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsItemTableViewCell" rowHeight="304" id="KGk-i7-Jjw" customClass="NewsItemTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="304"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGH-Uz-Trz">
+                        <rect key="frame" x="20" y="293" width="347" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hl-Yr-KZe">
+                        <rect key="frame" x="20" y="11" width="347" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdK-LT-O51">
+                        <rect key="frame" x="20" y="16" width="347" height="87"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oin-fu-CxF" customClass="CustomImageView" customModule="NewsApp" customModuleProvider="target">
+                        <rect key="frame" x="20" y="108" width="347" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="cHG-ii-xEV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sdK-LT-O51" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6VR-L6-PmS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pGH-Uz-Trz" secondAttribute="trailing" id="6rz-BZ-Zzm"/>
+                    <constraint firstItem="Oin-fu-CxF" firstAttribute="top" secondItem="sdK-LT-O51" secondAttribute="bottom" constant="5" id="IR8-DR-UbI"/>
+                    <constraint firstItem="pGH-Uz-Trz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Jo6-xh-41M"/>
+                    <constraint firstItem="pGH-Uz-Trz" firstAttribute="top" secondItem="Oin-fu-CxF" secondAttribute="bottom" constant="5" id="T5N-JG-FdW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Oin-fu-CxF" secondAttribute="trailing" id="Ylg-jS-Jok"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sdK-LT-O51" secondAttribute="trailing" id="bpD-Kf-Beb"/>
+                    <constraint firstItem="2Hl-Yr-KZe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dB7-Ck-JEH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pGH-Uz-Trz" secondAttribute="bottom" id="fxC-Xv-irN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2Hl-Yr-KZe" secondAttribute="trailing" id="v1B-V8-chc"/>
+                    <constraint firstItem="2Hl-Yr-KZe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="x6l-dY-cJg"/>
+                    <constraint firstItem="sdK-LT-O51" firstAttribute="top" secondItem="2Hl-Yr-KZe" secondAttribute="bottom" constant="5" id="yl1-Ie-YkH"/>
+                    <constraint firstItem="Oin-fu-CxF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zXg-xX-VpK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsItemDescriptionLabel" destination="pGH-Uz-Trz" id="l1w-kT-pU9"/>
+                <outlet property="newsItemImageView" destination="Oin-fu-CxF" id="FZe-3Y-g1X"/>
+                <outlet property="newsItemTimeLabel" destination="sdK-LT-O51" id="Cz2-fa-GBc"/>
+                <outlet property="newsItemTitleLabel" destination="2Hl-Yr-KZe" id="TmI-u8-B00"/>
+            </connections>
+            <point key="canvasLocation" x="77.536231884057983" y="178.125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
